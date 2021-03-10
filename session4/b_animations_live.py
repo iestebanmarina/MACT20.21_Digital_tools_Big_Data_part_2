@@ -21,6 +21,7 @@
 # importing libraries
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+import matplotlib; matplotlib.use("TkAgg")
 
 fig = plt.figure()
 # creating a subplot

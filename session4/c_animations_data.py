@@ -29,6 +29,7 @@ import matplotlib
 # Read files and prepare data
 data = pd.read_csv('../data/2021_seguiment-covid19-bcn.csv')
 #data = pd.read_csv('https://opendata-ajuntament.barcelona.cat/data/dataset/4f3ffbda-d5be-4f2a-a836-26a77be6df1a/resource/f627ac0a-d05f-416d-9773-eeb464a3fc44/download')
+print(data.head())
 data.columns = ['date_indicator', 'frequency_indicator', 'place', 'name_indicator',
                 'name_variable', 'value', 'unit', 'source']
 # data comes with multiple indicators, we need to pick just one of it for our initial plot
